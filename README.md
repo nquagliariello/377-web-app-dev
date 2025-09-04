@@ -2,10 +2,10 @@
 Projects for course 377 web application development
 
 This project includes the following languages:
--HTML
--CSS
--Javascript
--SVG
--PHP
--SQL
--Python
+- HTML
+- CSS
+- Javascript
+- SVG
+- PHP
+- SQL
+- Python
