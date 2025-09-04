@@ -10,4 +10,4 @@ This project includes the following languages:
 - SQL
 - Python
 
-All code copy right 2025
+All code copyright 2025
