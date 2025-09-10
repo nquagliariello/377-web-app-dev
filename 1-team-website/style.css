@@ -1,8 +1,60 @@
-body{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5MLL1omjEVgcrzZF0QRn31Yu3bikdLxQC8g&s);
-    background-repeat: no-repeat;
-}
 img{
-    width: 200px;
-    height: 200px;
+    height: 250px;
+}
+
+body {
+    background-image: url("https://golf-pass.brightspotcdn.com/dims4/default/cc3fc05/2147483647/strip/true/crop/1439x810+0+0/resize/590x332!/quality/90/?url=https%3A%2F%2Fgolf-pass-brightspot.s3.amazonaws.com%2Fe3%2Fb4%2F8b8476b84feeadcce4c703880b69%2F42698.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+.bluey{
+    color:blue;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+table, th, td {
+  border: 1px solid;
+  border-color: white;
+  background-color: blue;
+  color:white;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: grey;
+}
+
+.txt {
+    font-size:160%;
+    text-align: center;
+    color:white;
+    background-color: blue;
 }
