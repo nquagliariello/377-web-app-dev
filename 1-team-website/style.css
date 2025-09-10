@@ -19,7 +19,7 @@ body {
 }
 th, td {
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 table, th, td {
   border: 1px solid;
@@ -32,21 +32,26 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: blue;
+  display:flex;
+  justify-content: center;
+  max-width: 5000px;
 }
 
 ul li {
-  float: left;
+  margin: 0 10px;  
 }
 
 ul li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 18px;
   text-decoration: none;
+  background-color: blue;
+  border: radius 6px;
+  transition: background-color 0.3s;
 }
+
 
 ul li a:hover {
   background-color: grey;
@@ -54,7 +59,6 @@ ul li a:hover {
 
 .txt {
     font-size:160%;
-    text-align: center;
     color:white;
     background-color: blue;
 }
