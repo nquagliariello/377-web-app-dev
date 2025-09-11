@@ -26,6 +26,7 @@ table, th, td {
   border-color: white;
   background-color: blue;
   color:white;
+  min-width: 100px;
 
 }
 ul {
@@ -61,4 +62,38 @@ ul li a:hover {
     font-size:160%;
     color:white;
     background-color: blue;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
