@@ -5,16 +5,38 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Forms examples</title>
         <script>
-function doSubmit(){
-    let firstName = document.getElementById('firstName').value;
-    let lastName = document.getElementById('lastName').value;
-    // alert('Thank you, ' + firstName + '!');
+            function login(){
+                let username = document.getElementById("username").value;
+                let password = document.forms[0].elements['password'].value;
+                alert('Acess Denied for user ' + username + ' and password ' + password);
+            }
 
-    document.getElementById('output').innerHTML += firstName + ' ' + lastName + ' submitted the form'<br />;
+            function doSubmit(){
+                let firstName = document.getElementById('firstName').value;
+                let lastName = document.getElementById('lastName').value;
+                // alert('Thank you, ' + firstName + '!');
 
-    alert('Thank you, ' + firstName + " " + lastName + " for submiting the form")
-}
+                document.getElementById('output').innerHTML += firstName + ' ' + lastName + ' submitted the form'<br />;
+            }
 
+
+            function register(){
+                var username = document.forms[1].elements['username'].value;
+                if(username == ''){
+                    alert("user name is required");
+                } else{
+                    alert('success');
+                }
+                var terms = document.forms[1].elements['agreement'].checked;
+                if(!terms){
+                    success = false;
+                    alert('you must agree to the terms of service');
+                if(success){
+                    alert("User account created successfully")
+                }
+                
+                }
+            }
 
         </script>
     </head>
@@ -23,6 +45,19 @@ function doSubmit(){
 
         <form>
             <h2>Student Handbook Acknowledgement</h2>
+
+            Username:<input name="sername" id="username" type="text" placeholder="Enter your username">
+            <br>
+            Password:<input name="password" id="password" type="text" placeholder="Enter your password">
+            <br>
+            <input value="login" type="button" onclick= login()><br>
+
+            First name:<input name="firstname" type="text" placeholder="First name"><br>
+            Last name:<input name="lastname" type="text" placeholder="Last name"><br>
+            Username:<input name="username" type="text" placeholder="Username"><br>
+            
+            <input id="student" name="usertype" type="radio" value="student">
+            <label for stud
 
             First Name: <input type="text" id="firstName"/><br />
             Last Name: <input type="text" id="lastName"/><br />
@@ -34,7 +69,18 @@ function doSubmit(){
                 <option>Hanover center school</option>
             </select><br />
             I agree to handbook policies <input type="checkbox" /><br/>
-            <input type="button" value="I agree" onclick="doSubmit()"/>
+            <input type="button" value="I agree" onclick="doSubmit()"/><br>
+
+            age: <input name="age" type="number" placeholder="your age" min="1" max="100"><br>
+            dob:<input name ="dob" type="date" placeholder="your date of birth">
+            <br>
+            <input id="agreement" name="agreement" type="checkbox">
+            <label for="agreement">I agree to the terms of service....</label>
+            <br>
+            <input value='Create account' type="button" onclick= register()
+
+
+
         </form>
         <div id="output"></div>
     </body>

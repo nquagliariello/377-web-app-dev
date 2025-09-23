@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rectangle Formulas</title>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
+        <script>
+            function calculate(){
+                let length = $('#length').val();
+                let width = $('#width').val();
+                let area = (length * width);
+                $('#area').html(area);
+
+                let perimiter = ((length * 2) + (width * 2));
+                $('#perimiter').html(perimiter);
+            }
+            </script>
+    </head>
+
+    <body>
+
+        <input type="text" id="length" placeholder="Enter a value">
+        <br>
+        <input type="text" id="width" placeholder="Enter a value">
+
+        <button type="button" onclick="calculate()">Show stats </button> 
+
+        <table>
+            <tr>
+                <td>Area</td>
+                <td id="area"> </td>
+            </tr>
+
+            <tr>
+                <td>Perimiter</td>
+                <td id="perimiter"> </td>
+            </tr>
+        </table>
+
+    </body>
+</html>

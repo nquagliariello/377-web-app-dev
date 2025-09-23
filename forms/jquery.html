@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
+        <script>
+
+            function calculateCelcius(farenheit){
+                celcius = (farenheit - 32)  * 5 / 9 ;
+                $('#celcius').val(celcius);
+            }
+            function calculateFarenheit(celcius){
+                farenheit = 9 / 5 * celcius + 32;
+                $('#farenheit').val(farenheit);
+            }
+
+
+
+
+            function toggleInputs(){
+                if ($('.test-input').prop('disabled')){
+                    $('.test-input').prop('disabled', false).pop('placeholder', 'Re-enable').prop('disabled');
+                }else{
+                    $('.test-input').prop('disabled', true).prop('placeholder','Disabled')
+                }
+            }
+            
+            function updateDateTime(){
+                document.getElementById("dateTime").innerHTML = new Date();
+                
+                $('#dateTime').html(new Date());
+            }
+            </script>
+    </head>
+    
+    <body>
+        <h1>jquery examples</h1>
+
+        <input type="button" value="Click to view date and time" onclick="setDateTime()"/>
+        <div id="dateTime"></div>
+
+        <input type="text" class = "test-input" placeholder="Feild 1" /><br />
+        <input type="text" class = "test-input" placeholder="Feild 2" /><br />
+        <input type="text" class = "test-input" placeholder="Feild 3" /><br />
+
+        <input type="button" value="Click to disable input feilds" onclick="disabledInputs()" />
+
+        <h2>Temp Converter</h2>
+
+        <p class="instructions">
+        </p>
+
+        <input type="text" id="celcius" placeholder="Enter a value" onchange="calculateFarenheit(this.value)"/> &#176;C
+        <br>
+        <input type="text" id="farenheit" placeholder="Enter a value" onchange="calculateCelcius(this.value)"/> &#176;F
+
+        <hr>
+        <p class="instructions">
+            Use these buttons to show or hide the paragaphs
+        </p>
+
+        <button type="button" onclick="$('p').hide()">Hide Paragraphs</button>
+        <button type="button" onclick="$('p').show()">sho Paragraphs</button>
+
+    </body>
+
+
+
+</html>
