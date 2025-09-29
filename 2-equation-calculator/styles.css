@@ -1,0 +1,16 @@
+h1, td {
+    color: #D4D08E;
+    text-align: center;
+}
+
+table, .center{
+    border-color: #7D7D7D;
+    color: black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: #756B1C;
+}

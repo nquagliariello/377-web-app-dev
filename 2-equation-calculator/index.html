@@ -6,56 +6,65 @@
         <title>Cylinder Formulas</title>
         <script src="https://code.jquery.com/jquery-3.7.1.js"integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="crossorigin="anonymous"></script>
         <script src ="scripts.js"> </script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
-
         <h1>Volume Cone</h1>
-        <input type="text" id="radius" placeholder="Enter Radius">
-        <br>
-        <input type="text" id="height" placeholder="Enter Height">
-        <br>
-        <button type="button" onclick="calculateVol()">Show Volume Cone </button> 
+        <div class = "center">
 
-        <table>
-            <tr>
-                <td>Volume Cone</td>
-                <td id="volume"> </td>
-            </tr>
-        </table>
+            <input type="text" id="radius" placeholder="Enter Radius Cone">
+            <br>
+            <input type="text" id="height" placeholder="Enter Height Cone">
+            <br>
+            <button type="button" onclick="calculateVol()">Show Volume Cone </button> 
+            
+            <table>
+                <tr>
+                    <td>Volume Cone</td>
+                    <td id="volume"> </td>
+                </tr>
+            </table>
+        </div>
 
 
 
         <h1>Slant Height</h1>
-        <input type="text" id="radius" placeholder="Enter Radius">
-        <br>
-        <input type="text" id="height" placeholder="Enter Height">
-        <br>
-        <button type="button" onclick="calculateSH()">Show Volume Cone </button> 
+        <div class = "center">
 
-        <table>
-            <tr>
-                <td>Slant Height </td>
-                <td id="slantheight"> </td>
-            </tr>
-        </table>
+            <input type="text" id="radius" placeholder="Enter Radius Slant Height Cone">
+            <br>
+            <input type="text" id="height" placeholder="Enter Height Slant Height Cone">
+            <br>
+            <button type="button" onclick="calculateSH()">Show Volume Cone </button> 
+            
+            <table>
+                <tr>
+                    <td>Slant Height </td>
+                    <td id="slantheight"> </td>
+                </tr>
+            </table>
+        </div>
 
 
 
 
         <h1>Surface Area</h1>
-        <input type="text" id="radius" placeholder="Enter Radius">
-        <br>
-        <input type="text" id="height" placeholder="Enter Height">
-        <br>
-        <button type="button" onclick="calculateSA()">Show Volume Cone </button> 
+        <div class = "center">
+            <input type="text" id="radius" placeholder="Enter Radius Surface Area Cone">
 
-        <table>
-            <tr>
-                <td>Surface Area </td>
-                <td id="surfacea"> </td>
-            </tr>
-        </table>
+            <br>
+            <input type="text" id="height" placeholder="Enter Height Surface Area Cone">
+            <br>
+            <button type="button" onclick="calculateSA()">Show Volume Cone </button> 
+            
+            <table>
+                <tr>
+                    <td>Surface Area </td>
+                    <td id="surfacea"> </td>
+                </tr>
+            </table>
+        </div>
 
 
 

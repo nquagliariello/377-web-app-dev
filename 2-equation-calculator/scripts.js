@@ -19,6 +19,6 @@ function calculateSA(){
     let radius = $('#radius').val();
     let height = $('#height').val();
 
-    let surfacea = (((3.1159) * (radius)) * (radius + slantheight));
+    let surfacea = (((3.1159) * (radius)) * (radius + ((Math.sqrt((radius * radius) + (height * height))))));
     $('#surfacea').html(surfacea);
 }
