@@ -13,3 +13,18 @@ for line in lines:
         current += int(line)
 
 print(max)
+
+total = 0
+totals = []
+for line in lines:
+    line = line.strip()
+    if line == '':
+        totals.append(total)
+        total = 0
+    else:
+        total += int(line)
+
+totals.sort(reverse=True)
+
+print('Max calories ' + str(max))
+print('Max calories ' + str(max(totals[0:3])))

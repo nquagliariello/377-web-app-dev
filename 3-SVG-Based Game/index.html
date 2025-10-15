@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Baccarat</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+
+    <body>
+        <h1>Baccarat Game</h1>
+
+            <svg width="1000" height="500">
+
+            <rect id="background" x="" y="0" width="1000" height="500" />
+
+            <ellipse cx="450" cy="225" rx="300" ry="190" style="fill:rgb(119, 54, 54);stroke:white;stroke-width:2;"/>
+
+
+         </svg>
+
+        <div id="controls">
+            Winnings: <span id="winnings">$50</span>
+            <span class="spacer"></span>
+            Bet: <input type="text" id="bet" name="bet" size="5" />
+            <span class="spacer"></span>
+            <button onclick="dealCard()">Deal cards!</button>
+        </div>
+    </body>
