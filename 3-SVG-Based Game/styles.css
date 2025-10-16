@@ -1,3 +1,17 @@
 #background{
     fill:green;
 }
+
+.game{
+    fill:white;
+}
+
+.card{
+    fill:white;
+}
+
+.button{
+    fill: red;
+    color: white;
+    font-weight: bold;
+}

@@ -16,7 +16,30 @@
 
             <rect id="background" x="" y="0" width="1000" height="500" />
 
-            <ellipse cx="450" cy="225" rx="300" ry="190" style="fill:rgb(119, 54, 54);stroke:white;stroke-width:2;"/>
+            <ellipse cx="450" cy="225" rx="300" ry="190" style="fill:rgb(100, 59, 59);stroke:white;stroke-width:2;"/>
+
+            <rect class="card" id="p1" x="185" y="150" width="65" height="100"rx="15" ry="15"/>
+            <text>rank p1</text>
+            <text>suit p1</text>
+            <rect class="card" id="p2" x="280" y="150" width="65" height="100"rx="15" ry="15"/>
+            <text>rank p2</text>
+            <text>suit p2</text>
+            <rect class="card" id="b1" x="535" y="150" width="65" height="100" rx="15" ry="15"/>
+            <text>rank b1</text>
+            <text>suit b1</text>
+            <rect class="card" id="b2" x="630" y="150" width="65" height="100"rx="15" ry="15"/>
+            <text>rank b2</text>
+            <text>suit b2</text>
+
+            <rect class="button" x="315" y="325" width="100" height="45"rx="15" ry="15"/>
+            <text x="355" y="350">Hit</text>
+            <rect class="button" x="475" y="325" width="100" height="45"rx="15" ry="15"/>
+            <text x="510" y="350">Stay</text>
+
+            <circle class="game" cx="250" cy="300" r="25" onclick="deal()" />
+            <text x="230" y="305">Player</text>
+            <circle class="game" cx="650" cy="300" r="25" onclick="deal()"/>
+            <text x="628" y="305">Banker</text>
 
 
          </svg>

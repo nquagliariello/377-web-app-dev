@@ -25,3 +25,11 @@ function dealCard(){
     let nextCard= deck.pop();
     $("#card").html(nextCard.rank + " of " + nextCard.suit);
 }
+
+function deal(){
+    
+}
+
+// deal will display a card at the player hand then the banker then the player then back to the banker
+
+// if the cards add up to 9 then player or banker wins, if the card numbers added up are less then 9 then user will hit or stay
