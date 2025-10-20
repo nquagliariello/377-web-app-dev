@@ -1,4 +1,8 @@
-function card(){
+$(function() {
+    shuffleDeck();
+});
+
+function Card(suit, value, rank){
     this.suit = suit;
     this.value = value;
     this.rank = rank;
@@ -10,7 +14,7 @@ function shuffleDeck(){
     let suits =["Hearts", "Diamonds", "Clubs", "Spades"];
     for (let i = 0; i < 4; i ++) {
         for (let rank = 1; rank < 14; rank++){
-            let card = new Card(suits[i], rank,rank);
+            let card = new Card(suits[i], rank, rank);
             deck.push(card)
 
         }
@@ -23,11 +27,31 @@ function shuffleDeck(){
 
 function dealCard(){
     let nextCard= deck.pop();
-    $("#card").html(nextCard.rank + " of " + nextCard.suit);
+    $("#p1rank").html(nextCard.rank);
+    $("#p1suit").html(nextCard.suit);
+
+    nextCard= deck.pop();
+    $("#b1rank").html(nextCard.rank);
+    $("#b1suit").html( nextCard.suit);
+
+    nextCard= deck.pop();
+    $("#p2rank").html(nextCard.rank);
+    $("#p2suit").html(nextCard.suit);
+
+    nextCard= deck.pop();
+    $("#b2rank").html(nextCard.rank);
+    $("#b2suit").html(nextCard.suit);
+
 }
 
-function deal(){
-    
+function hit(){
+    let hitCard = deck.pop()
+    $("#ptotal").html(hitCard.rank);
+    // if 
+}
+
+function stay(){
+
 }
 
 // deal will display a card at the player hand then the banker then the player then back to the banker

@@ -19,26 +19,29 @@
             <ellipse cx="450" cy="225" rx="300" ry="190" style="fill:rgb(100, 59, 59);stroke:white;stroke-width:2;"/>
 
             <rect class="card" id="p1" x="185" y="150" width="65" height="100"rx="15" ry="15"/>
-            <text id="p1rank"> </text>
-            <text id="p1suit"> </text>
+            <text id="p1rank" x="185" y="180"> </text>
+            <text id="p1suit" x="185" y="200"> </text>
             <rect class="card" id="p2" x="280" y="150" width="65" height="100"rx="15" ry="15"/>
-            <text id="p2rank"> </text>
-            <text id="p2suit"></text>
+            <text id="p2rank" x="280" y="180"> </text>
+            <text id="p2suit" x="280" y="200"></text>
             <rect class="card" id="b1" x="535" y="150" width="65" height="100" rx="15" ry="15"/>
-            <text id="b1rank"></text>
-            <text id="b1suit"></text>
+            <text id="b1rank" x="535" y="180"></text>
+            <text id="b1suit" x="535" y="200"></text>
             <rect class="card" id="b2" x="630" y="150" width="65" height="100"rx="15" ry="15"/>
-            <text id="b2rank"></text>
-            <text id="b2suit"></text>
+            <text id="b2rank" x="630" y="180"></text>
+            <text id="b2suit"x="630" y="200"></text>
 
-            <rect class="button" x="315" y="325" width="100" height="45"rx="15" ry="15"/>
+            <text id="ptotal" x="380" y="150"></text>
+            <text id="btotal" x="" y=""></text>
+
+            <rect class="button" x="315" y="325" width="100" height="45"rx="15" ry="15" onclick="hit()"/>
             <text x="355" y="350">Hit</text>
-            <rect class="button" x="475" y="325" width="100" height="45"rx="15" ry="15"/>
+            <rect class="button" x="475" y="325" width="100" height="45"rx="15" ry="15" onclick="stay()"/>
             <text x="510" y="350">Stay</text>
 
-            <circle class="game" cx="250" cy="300" r="25" onclick="deal()" />
+            <circle class="game" cx="250" cy="300" r="25" onclick="" />
             <text x="230" y="305">Player</text>
-            <circle class="game" cx="650" cy="300" r="25" onclick="deal()"/>
+            <circle class="game" cx="650" cy="300" r="25" onclick=""/>
             <text x="628" y="305">Banker</text>
 
 
