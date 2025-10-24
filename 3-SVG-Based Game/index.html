@@ -14,7 +14,7 @@
 
             <svg width="1000" height="500">
 
-            <rect id="background" x="" y="0" width="1000" height="500" />
+            <rect id="background" x="0" y="0" width="1000" height="500" />
 
             <ellipse cx="450" cy="225" rx="300" ry="190" style="fill:rgb(100, 59, 59);stroke:white;stroke-width:2;"/>
 
@@ -32,11 +32,11 @@
             <text id="b2suit"x="630" y="200"></text>
 
             <text id="ptotal" x="380" y="150"></text>
-            <text id="btotal" x="" y=""></text>
+            <text id="btotal" x="480" y="150"></text>
 
-            <rect class="button" x="315" y="325" width="100" height="45"rx="15" ry="15" onclick="hit()"/>
+            <rect id="button1" class="button" x="315" y="325" width="100" height="45"rx="15" ry="15" onclick="hit()"/>
             <text x="355" y="350">Hit</text>
-            <rect class="button" x="475" y="325" width="100" height="45"rx="15" ry="15" onclick="stay()"/>
+            <rect id="button2" class="button" x="475" y="325" width="100" height="45"rx="15" ry="15" onclick="stay()"/>
             <text x="510" y="350">Stay</text>
 
             <circle class="game" cx="250" cy="300" r="25" onclick="" />
@@ -46,6 +46,13 @@
 
 
          </svg>
+         <h2 id="result"></h2>
+
+            <p> In this game called Baccarat, the player will play against the banker. Once cards are delt the cards will be 
+            added toether, if the cards add up to greater than 10</p><br>
+            <p> the ones place # will be used. The goal is to get closest to 9, 
+            once player is happy with their number then they will choose stand and the players # will be compared to the banker, if
+            one is closer to 9 than the other, then they win. </p>
 
         <div id="controls">
             Winnings: <span id="winnings">$50</span>
