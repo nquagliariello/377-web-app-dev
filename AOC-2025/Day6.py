@@ -1,4 +1,4 @@
-file = open("Day6.txt", "r")
+file = open("Day6.snippet", "r")
 lines = file.readlines()
 
 grid = []

@@ -8,15 +8,15 @@ for line in lines:
     
     distance = int(line[1:])
 
-    if line[0] == 'R':
-        current += distance 
-    elif line[0] == 'L':
-        current -= distance
-    
-    current %= 100
+    for i in range(distance):
+        
+        if line[0] == 'R':
+            current = (current + 1) % 100 
+        elif line[0] == 'L':
+            current = (current - 1) % 100
 
-    if current == 0:
-        totalzero += 1
+        if current == 0:
+            totalzero += 1
 
 
 print(current)
