@@ -1,0 +1,17 @@
+import os
+
+folder = '/Users/nicholasquagliariello/Documents/377-web-app-dev/photos'
+
+prefix = 'quaggie'
+count = 1
+
+for filename in os.listdir(folder):
+
+    new_filename = prefix +'-' + str(count) + '.jpg'
+    source = folder + '/' + filename
+    destination = folder + '/' + prefix + str(count) + '.jpg'
+
+    print('Renaming ' + filename + ' to ' + new_filename)
+    os.rename(source, destination)
+
+    count += 1
