@@ -1,0 +1,30 @@
+<table>
+    <tr>
+        <th>monday</th>
+        <th>tuesday</th>
+        <th>wednesday</th>
+        <th>thursday</th>
+        <th>friday</th>
+        <th>saturday</th>
+        <th>sunday</th>
+    </tr>       
+
+    <tr>
+        <th>prac</th>
+        <th>prac</th>
+        <th>match</th>
+        <th>prac</th>
+        <th>match</th>
+        <th>prac</th>
+        <th>prac</th>
+    </tr> 
+    
+    <tr>
+        <th>prac</th>
+        <th>prac</th>
+        <th>prac</th>
+        <th>match</th>
+        <th>prac</th>
+        <th>prac</th>
+        <th>prac</th>
+    </tr>       
