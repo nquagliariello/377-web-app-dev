@@ -5,9 +5,9 @@ include("library.php");
 $connection = get_connection();
 
 $delete =<<<SQL
-delete movie
+delete lib
 SELECT * 
-FROM movie
+FROM lib
 SQL;
 
 ?>
