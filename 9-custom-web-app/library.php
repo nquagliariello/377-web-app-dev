@@ -7,7 +7,7 @@ function get_connection()
     $servername = "localhost";
     $username = "root";
     $password = "password";
-    $dbname = "hmdb";
+    $dbname = "nqm";
 
     // Connect to the database and make sure it was successful
     $connection = new mysqli($servername, $username, $password, $dbname);

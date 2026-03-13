@@ -6,36 +6,20 @@
 
 <a href='index.php?content=list'>All</a>
 
-<?php
-
-
-// for ($i = 1; $i < 10; $i++)
-// {
-//     echo "<a href='index.php?content=list&filter=$i'>$i</a> ";
-// }
-
-// for ($i = 0; $i < 26; $i++)
-// {
-//     $letter = chr($i + ord("A"));
-//     echo "<a href='index.php?content=list&filter=$letter'>$letter</a> ";
-// }
-
-?>
-
 <a href='index.php?content=detail&id=-1'class = 'btn btn-primary' role='button'>Add</a>
 
 <table class="table table-bordered table-hover">
     <thead class="thead-dark">
         <tr>
-            <th>Title</th>
-            <th>Album</th>
-            <th>Artist</th>
-            <th>Duration</th>
-            <th>Release Year</th>
-            <th>Plays</th>
-            <th>Origin</th>
-            <th>Awards</th>
-            <th>Lyrics</th>
+            <th><a href='index.php?content=list&sort=lib_title'>Title</a></th>
+            <th><a href='index.php?content=list&sort=lib_album'>Album</a></th>
+            <th><a href='index.php?content=list&sort=lib_artist'>Artist</a></th>
+            <th><a href='index.php?content=list&sort=lib_duration'>Duration</a></th>
+            <th><a href='index.php?content=list&sort=lib_release_year'>Release Year</a></th>
+            <th><a href='index.php?content=list&sort=lib_plays'>Plays</a></th>
+            <th><a href='index.php?content=list&sort=lib_origin'>Origin</a></th>
+            <th><a href='index.php?content=list&sort=lib_awards'>Awards</a></th>
+            <th><a href='index.php?content=list&sort=lib_lyrics'>Lyrics</a></th>
         </tr>
     </thead>
     <tbody>
@@ -44,20 +28,15 @@
 
 $connection = get_connection();
 
-if (!isset($filter))
+if (!isset($sort))
 {
-    $filter = '';
-}
-else
-{
-    $filter = $connection->real_escape_string($filter);
+    $sort = 'lib_title';
 }
 
 $sql =<<<SQL
  SELECT *
    FROM nq_lib
-  WHERE lib_title LIKE '$filter%'
-  ORDER BY lib_title
+  ORDER BY $sort
 SQL;
 
 $recordCount = 0;

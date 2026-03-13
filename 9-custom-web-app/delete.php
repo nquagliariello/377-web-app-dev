@@ -10,4 +10,4 @@ SELECT *
 FROM lib
 SQL;
 
-?>
+header('Location: index.php?content=list');

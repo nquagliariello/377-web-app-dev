@@ -3,17 +3,31 @@ from sys import argv
 
 SPEC = "!@#$%^&*()_<M>?:{}|"
 
-script, r, h = argv
+if len(argv) == 3:
+    length = int(argv[1])
 
-length = int(input('How long is your password? '))
+    number = "0" in argv[2]
+    lower = "a" in argv[2]
+    upper = "A" in argv[2]
+    special = "!" in argv[2]
 
-numbers = int(input('How many numbers are in your password? '))
+# script, r, h = argv
 
-upper = input('Would you like an uppercase?[Y/N] ').upper()[0] == "Y"
+elif len(argv) == 1:
 
-lower = input('Would you like a lowercase? [Y/N] ').upper()[0] == "Y"
+    length = int(input('How long is your password? '))
 
-special = input('Would you like a special character? [Y/N] ').upper()[0] == "Y"
+    numbers = int(input('How many numbers are in your password? '))
+
+    upper = input('Would you like an uppercase?[Y/N] ').upper()[0] == "Y"
+
+    lower = input('Would you like a lowercase? [Y/N] ').upper()[0] == "Y"
+
+    special = input('Would you like a special character? [Y/N] ').upper()[0] == "Y"
+else:
+    print("Expected useage: password-generator.py LENTH PATTERN")
+    print("where patternmcontaonns one or more of the following Aa0")
+    exit()
 
 password = []
 

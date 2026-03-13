@@ -43,47 +43,47 @@ echo '<h2>' . $row["lib_title"] . '</h2>';
     </div>
 
     <div class="mb-3">
-        <label for="genre" class="form-label">Album</label>
-        <input type="text" class="form-control" name="genre" value="<?php echo $row["lib_album"]; ?>">
+        <label for="album" class="form-label">Album</label>
+        <input type="text" class="form-control" name="album" value="<?php echo $row["lib_album"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="rating" class="form-label">Artist</label>
-        <input type="text" class="form-control" name="rating" value="<?php echo $row["lib_artist"]; ?>">
+        <label for="artist" class="form-label">Artist</label>
+        <input type="text" class="form-control" name="artist" value="<?php echo $row["lib_artist"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="mpaa" class="form-label">Duration</label>
-        <input type="text" class="form-control" name="mpaa" value="<?php echo $row["lib_duration"]; ?>">
+        <label for="duration" class="form-label">Duration</label>
+        <input type="text" class="form-control" name="duration" value="<?php echo $row["lib_duration"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="duration" class="form-label">Release Year</label>
-        <input type="text" class="form-control" name="duration" value="<?php echo $row["lib_release_year"]; ?>">
+        <label for="release_year" class="form-label">Release Year</label>
+        <input type="text" class="form-control" name="release_year" value="<?php echo $row["lib_release_year"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="release_year" class="form-label">Plays</label>
-        <input type="text" class="form-control" name="release_year" value="<?php echo $row["lib_plays"]; ?>">
+        <label for="plays" class="form-label">Plays</label>
+        <input type="text" class="form-control" name="plays" value="<?php echo $row["lib_plays"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="release_year" class="form-label">Origin</label>
-        <input type="text" class="form-control" name="release_year" value="<?php echo $row["lib_origin"]; ?>">
+        <label for="origin" class="form-label">Origin</label>
+        <input type="text" class="form-control" name="origin" value="<?php echo $row["lib_origin"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="release_year" class="form-label">Awards</label>
-        <input type="text" class="form-control" name="release_year" value="<?php echo $row["lib_awards"]; ?>">
+        <label for="awards" class="form-label">Awards</label>
+        <input type="text" class="form-control" name="awards" value="<?php echo $row["lib_awards"]; ?>">
     </div>
 
     <div class="mb-3">
-        <label for="release_year" class="form-label">Lyrics</label>
-        <input type="text" class="form-control" name="release_year" value="<?php echo $row["lib_lyrics"]; ?>">
+        <label for="lyrics" class="form-label">Lyrics</label>
+        <input type="text" class="form-control" name="lyrics" value="<?php echo $row["lib_lyrics"]; ?>">
     </div>
 
     <a href="index.php?content=list" class="btn btn-secondary" role="button">Cancel</a>
-    <a href="delete.php?id=<?php echo $row["lib_id"]; ?>" class="btn btn-secondary" role="button">delete</a>
+    <a href="delete.php?id=<?php echo $row["lib_id"]; ?>" class="btn btn-secondary" role="Button">delete</a>
     <button type="submit" class="btn btn-primary">Save</button>
 
 </form>
