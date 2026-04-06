@@ -99,7 +99,12 @@ body {
     color: var(--text);
 }
 
-.tb {
-    
+.alert-position {
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -250px;
+    top: 100px;
+    width: 500px;
+    z-index: 10000;
 }
-/*
