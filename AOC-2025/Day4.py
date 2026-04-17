@@ -1,4 +1,4 @@
-file = open("Day4.txt", "r")
+file = open("Day4.snippet", "r")
 lines = file.readlines()
 
 total = 0
